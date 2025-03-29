@@ -18,9 +18,9 @@ import {
 import Providers from "@/app/Providers";
 
 export const metadata: Metadata = {
-  title: "Konak",
-  description: "Konak",
-  icons: [{ rel: "icon", url: "/images/home/hero/logof.png", sizes: "11x11" }],
+  title: "Blends Cafe",
+  description: "Blends Cafe",
+  icons: [{ rel: "icon", url: "/images/home/hero/logo.png", sizes: "11x11" }],
 };
 
 const inter = Inter({
