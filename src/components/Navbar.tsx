@@ -47,7 +47,7 @@ const Navbar = ({
             style={{
               borderRadius: "999px",
               background: "rgba(10,10,10,0.03)",
-              backdropFilter: "blur(27.7px)",
+              backdropFilter: "blur(27.8px)",
             }}
           >
             <Link
