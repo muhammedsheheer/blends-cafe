@@ -7,24 +7,25 @@ const JoinUs = ({}) => {
     <section
       className="relative flex h-screen w-full items-center justify-center opacity-90"
       style={{
-        backgroundImage: `url('/images/about-us/image7.jpg')`,
+        backgroundImage: `url('/images/about-us/image4.jpg')`,
         backgroundSize: "cover",
       }}
     >
       <div className="flex h-full w-full flex-col-reverse items-center justify-center gap-4 md:flex-row">
         <div className="flex h-full w-full flex-col items-center justify-center gap-[2.5rem] p-6">
           <h1 className="font-oswald max-w-[500px] text-center text-5xl leading-[60px] text-[#fff]">
-            Join Us for an
+            Experience a Feast
             <br />
-            Unforgettable Feast
+            to Remember
           </h1>
           <p className="max-w-[450px] text-center font-[600] leading-[160%] text-[#ffff]">
-            Whether it`s a cozy dinner or a grand gathering, Levant invites you
-            to embark on an extraordinary culinary journey. From authentic
-            Middle Eastern flavors to hand-selected ingredients, every dish is a
-            tribute to our rich heritage and passion for excellence. Immerse
-            yourself in an experience where tradition meets innovation, and
-            every bite is a celebration of taste and culture.
+            Whether you`re sharing a quiet evening or hosting a vibrant
+            celebration, Levant welcomes you to savor an unforgettable dining
+            experience. From the deep roots of Middle Eastern tradition to
+            carefully chosen ingredients, each dish reflects our love for
+            authenticity and flavor. Step into a world where timeless recipes
+            meet creative flair—where every bite honors culture, passion, and
+            the joy of great food.
           </p>
 
           <Link href={"/table-booking"}>

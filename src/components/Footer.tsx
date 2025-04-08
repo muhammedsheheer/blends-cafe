@@ -51,16 +51,23 @@ const Footer = ({}) => {
           </Link>
         </div>
         <div className="flex flex-row items-center justify-center gap-4">
-          <Link href={""} target="_blank">
+          <Link
+            href={
+              "https://www.instagram.com/blends_liverpool?igsh=MTJmMnJraTFzcGQzdw%3D%3D&utm_source=qr"
+            }
+            target="_blank"
+          >
             <Icons.instagram className="text-[#394F3B]" />
           </Link>
-          <Link href={""} target="_blank">
-            <Icons.unknown className="text-[#394F3B]" />
-          </Link>
-          <Link href={""} target="_blank">
+          <Link href={"https://g.co/kgs/dKbaavM"} target="_blank">
             <Icons.google className="text-[#394F3B]" />
           </Link>
-          <Link href={""} target="_blank">
+          <Link
+            href={
+              "https://www.facebook.com/people/Blends-Cafe/61560530660088/?mibextid=wwXIfr&rdid=4NoAj2XKI0633Ey4&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BW7WMXeXs%2F%3Fmibextid%3DwwXIfr"
+            }
+            target="_blank"
+          >
             <Icons.facebook className="text-[#394F3B]" />
           </Link>
         </div>
@@ -70,7 +77,7 @@ const Footer = ({}) => {
           </span>
           <Link
             className="font-manrope text-xs font-[400] tracking-[0.84px] text-[#CCAD64] underline"
-            href={""}
+            href={"https://foodo.ai/"}
             target="_blank"
           >
             Powered By Foodo

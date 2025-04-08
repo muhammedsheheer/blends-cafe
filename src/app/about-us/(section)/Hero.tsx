@@ -11,24 +11,24 @@ const Hero = ({}) => {
           <div className="flex w-full items-center justify-center lg:w-1/2">
             <div className="mt-20 flex flex-col items-start gap-6 lg:mt-0 lg:w-8/12">
               <h1 className="font-oswald text-5xl font-semibold leading-[66px] text-[#000] lg:text-6xl">
-                Welcome to Levant
-                <br /> A Symphony of Flavors
+                Welcome to Blends Cafe
+                <br /> A Harmony of Taste & Comfort
               </h1>
               <p className="font-manrope font-normal text-[#000]">
-                At Levant, every dish is a celebration of rich traditions and
-                bold flavors. From the finest ingredients to time-honored
-                recipes, we bring you an unforgettable dining experience
-                inspired by the heart of Middle Eastern and Mediterranean
-                cuisine. Whether you`re indulging in perfectly grilled kebabs,
-                savoring aromatic spices, or treating yourself to a sweet
-                delight, each bite tells a story of authenticity, passion, and
-                culinary mastery.
+                At Blends Cafe, every cup and every bite is crafted to bring
+                people together over rich flavors and heartfelt moments. From
+                carefully brewed coffee to artisan bites and baked delights, we
+                blend tradition, quality, and creativity to offer a cafe
+                experience like no other. Whether you`re here for your morning
+                pick-me-up, a cozy catch-up, or a quiet moment with your
+                favorite book, Blends Cafe is your space to savor, relax, and
+                feel at home.
               </p>
             </div>
           </div>
           <div className="flex w-full flex-col items-center justify-center gap-6 md:mt-16 lg:w-1/2">
             <Image
-              src="/images/about-us/image1.jpg"
+              src="/images/about-us/image2.jpg"
               width={951}
               height={975}
               alt="hero"

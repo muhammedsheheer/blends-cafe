@@ -35,9 +35,9 @@ const Follow: React.FC = () => {
             <span className="text-center font-inter text-sm font-[500] capitalize tracking-[0.72px] text-[#394F3B]">
               Booking request
             </span>
-            <Link href={""}>
+            <Link href={"tel:+01513453923"}>
               <span className="text-center font-inter text-xl font-[400] text-[#394F3B] md:text-2xl">
-                +44 151 345 3923
+                0151 345 3923
               </span>
             </Link>
           </div>
@@ -45,9 +45,9 @@ const Follow: React.FC = () => {
             <span className="text-center font-inter text-sm font-[500] capitalize tracking-[0.72px] text-[#394F3B]">
               Location{" "}
             </span>
-            <Link href={""} className="text-center">
+            <Link href={"https://g.co/kgs/dKbaavM"} className="text-center">
               <span className="text-center font-inter text-xl font-[400] text-[#394F3B] md:text-2xl">
-                14 Williamson St, Liverpool L1 <br /> 1EB, United Kingdom{" "}
+                14 Williamson St, Liverpool <br /> L1 1EB, United Kingdom
               </span>
             </Link>
           </div>
@@ -56,10 +56,10 @@ const Follow: React.FC = () => {
               Opening Hours{" "}
             </span>
             <span className="text-center font-inter text-base font-[400] text-[#394F3B] md:text-lg">
-              Monday-Friday: 11:00 AM - 09:00 PM{" "}
+              Monday-Friday: 09:00 AM - 09:00 PM{" "}
             </span>
             <span className="text-center font-inter text-base font-[400] text-[#394F3B] md:text-lg">
-              Saturday-Sunday: 10:00 AM - 09:00 PM{" "}
+              Saturday-Sunday: 10:00 AM - 07:00 PM{" "}
             </span>
           </div>
         </div>

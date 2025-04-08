@@ -14,7 +14,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
-import { ArrowRight, MapPin, Phone } from "lucide-react";
+import { ArrowRight, Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
@@ -91,13 +91,13 @@ const Contact = ({}) => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <Link href={""} target="_blank">
+                  <Link href={"https://g.co/kgs/dKbaavM"} target="_blank">
                     <p className="text-[#000]">
-                      9 Barlow Moor Rd, Didsbury, Manchester
-                      <br /> M20 6TN, United Kingdom
+                      14 Williamson St, Liverpool <br /> L1 1EB, United
+                      Kingdom{" "}
                     </p>
                   </Link>
-                  <Link href={""} target="_blank">
+                  <Link href={"https://g.co/kgs/dKbaavM"} target="_blank">
                     <p className="flex items-center gap-2 text-sm text-[#000]">
                       <span>Get Direction</span>
                       <ArrowRight className="text-[#000]" />
@@ -122,19 +122,44 @@ const Contact = ({}) => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <Link href="tel:+01614230494" className="text-[#000]">
-                    0161 423 04 94{" "}
+                  <Link href="tel:+01513453923" className="text-[#000]">
+                    0151 345 3923
+                  </Link>
+                </div>
+              </div>
+              <div className="flex items-center gap-6">
+                <div>
+                  <div className="h-fit w-fit rounded-full p-2">
+                    <Mail className="text-[#000]" />
+                  </div>
+                </div>
+                <div className="flex flex-col gap-4">
+                  <Link
+                    href="mailto:info@blendsbrunch.co.uk"
+                    className="text-[#000]"
+                  >
+                    info@blendsbrunch.co.uk
                   </Link>
                 </div>
               </div>
               <div className="flex items-center justify-start gap-4">
-                <Link href={""} target="_blank">
+                <Link
+                  href={
+                    "https://www.instagram.com/blends_liverpool?igsh=MTJmMnJraTFzcGQzdw%3D%3D&utm_source=qr"
+                  }
+                  target="_blank"
+                >
                   <Icons.instagram className="text-[#000]" />
                 </Link>
-                <Link href={""} target="_blank">
-                  <Icons.unknown className="text-[#000]" />
+                <Link
+                  href={
+                    "https://www.facebook.com/people/Blends-Cafe/61560530660088/?mibextid=wwXIfr&rdid=4NoAj2XKI0633Ey4&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BW7WMXeXs%2F%3Fmibextid%3DwwXIfr"
+                  }
+                  target="_blank"
+                >
+                  <Icons.facebook className="text-[#000]" />
                 </Link>
-                <Link href={""} target="_blank">
+                <Link href={"https://g.co/kgs/dKbaavM"} target="_blank">
                   <Icons.google className="text-[#000]" />
                 </Link>
                 {/* <Link href='https://www.facebook.com/Istanbulwoolton/'>
@@ -232,7 +257,7 @@ const Contact = ({}) => {
           </div>
         </div>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2260.19196832903!2d-2.2318719!3d53.4175839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb3df9225b6c3%3A0x365fe3576a0f6abb!2sLevant%20Elixir%20of%20Co-Existence%20Restaurant!5e1!3m2!1sen!2sin!4v1742976588803!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2260.80702841147!2d-2.9844258000000004!3d53.406011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b2157140ef677%3A0x5fba4c238af6cfb4!2sBlends%20cafe!5e1!3m2!1sen!2sin!4v1744096896385!5m2!1sen!2sin"
           style={{ border: 0 }}
           allowFullScreen
           loading="lazy"
@@ -243,7 +268,7 @@ const Contact = ({}) => {
       <div className="flex w-full overflow-hidden">
         <Image
           className="h-full w-full object-cover lg:h-[500px]"
-          src="/images/about-us/image4.jpg"
+          src="/images/about-us/image5.jpg"
           alt="bottom"
           width={966}
           height={96}
