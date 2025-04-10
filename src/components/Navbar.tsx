@@ -53,7 +53,9 @@ const Navbar = ({
             <Link
               href="/"
               className={`text-center font-playfair text-sm font-[400] capitalize tracking-[1.106px] ${
-                pathname === "/" ? "text-[#fff]" : "text-[#000]"
+                pathname === "/" || pathname === "/table-booking"
+                  ? "text-[#fff]"
+                  : "text-[#000]"
               } hover:underline`}
             >
               Home
@@ -62,7 +64,9 @@ const Navbar = ({
             <Link
               href={"/menu"}
               className={`text-center font-playfair text-sm font-[400] capitalize tracking-[1.106px] ${
-                pathname === "/" ? "text-[#fff]" : "text-[#000]"
+                pathname === "/" || pathname === "/table-booking"
+                  ? "text-[#fff]"
+                  : "text-[#000]"
               } hover:underline`}
             >
               Menu
@@ -71,7 +75,9 @@ const Navbar = ({
             <Link
               href={"/about-us"}
               className={`text-center font-playfair text-sm font-[400] capitalize tracking-[1.106px] ${
-                pathname === "/" ? "text-[#fff]" : "text-[#000]"
+                pathname === "/" || pathname === "/table-booking"
+                  ? "text-[#fff]"
+                  : "text-[#000]"
               } hover:underline`}
             >
               About
@@ -80,7 +86,9 @@ const Navbar = ({
             <Link
               href={"/contact"}
               className={`text-center font-playfair text-sm font-[400] capitalize tracking-[1.106px] ${
-                pathname === "/" ? "text-[#fff]" : "text-[#000]"
+                pathname === "/" || pathname === "/table-booking"
+                  ? "text-[#fff]"
+                  : "text-[#000]"
               } hover:underline`}
             >
               Contact
@@ -90,7 +98,7 @@ const Navbar = ({
             <Link href={"/table-booking"}>
               <Button
                 className={`flex flex-row items-center justify-center gap-1 px-7 py-7 font-playfair text-sm font-[600] capitalize tracking-[1.08px] ${
-                  pathname === "/"
+                  pathname === "/" || pathname === "/table-booking"
                     ? "text-[#F7F4ED] hover:text-[#F7F4ED]"
                     : "text-[#000] hover:text-[#000]"
                 }`}
@@ -103,7 +111,9 @@ const Navbar = ({
                 book table{" "}
                 <ArrowRight
                   className={`${
-                    pathname === "/" ? "w-5 text-[#F7F4ED]" : "w-5 text-[#000]"
+                    pathname === "/" || pathname === "/table-booking"
+                      ? "w-5 text-[#F7F4ED]"
+                      : "w-5 text-[#000]"
                   }`}
                 />
               </Button>
