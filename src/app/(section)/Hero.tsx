@@ -6,19 +6,20 @@ import React from "react";
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative flex h-screen w-full items-center justify-center overflow-hidden bg-[#fff]">
+    <section className="relative flex h-screen w-full items-center justify-center overflow-hidden">
       <video
         autoPlay
         loop
         muted
         playsInline
         className="absolute inset-0 h-full w-full object-cover"
+        poster="/images/thumbnail.png"
       >
         <source src="/videos/hero.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
-      <div className="absolute inset-0 bg-black/20 backdrop-blur-md"></div>
+      <div className="absolute inset-0 bg-black/40"></div>
 
       <div className="relative flex flex-col items-center justify-center gap-5 px-4">
         <Image
