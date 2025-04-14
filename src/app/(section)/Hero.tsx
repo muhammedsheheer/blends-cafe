@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
         Your browser does not support the video tag.
       </video>
 
-      <div className="absolute inset-0 bg-black/40"></div>
+      <div className="absolute inset-0 bg-black/60"></div>
 
       <div className="relative flex flex-col items-center justify-center gap-5 px-4">
         <Image
@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
           alt="logo"
           className="w-32"
         />
-        <h1 className="text-center font-italiana text-5xl font-[400] capitalize text-[#394F3B] md:text-8xl">
+        <h1 className="z-10 text-center font-italiana text-5xl font-[400] capitalize text-[#fff] md:text-8xl">
           Blending Coffee & <br /> Comfort
         </h1>
         <div className="">
