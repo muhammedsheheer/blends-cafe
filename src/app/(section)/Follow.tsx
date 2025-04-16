@@ -2,12 +2,24 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Follow: React.FC = () => {
   return (
-    <section className="h-full w-full bg-[#394F3B] px-4 pb-4 pt-12 md:px-10 md:pt-16">
+    <motion.section
+      className="h-full w-full bg-[#394F3B] px-4 pb-4 pt-12 md:px-10 md:pt-16"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: false, amount: 0.2 }}
+      transition={{ duration: 0.8 }}
+    >
       <div className="flex w-full flex-col gap-6 md:flex-row md:items-end">
-        <div className="w-full md:w-[30%]">
+        <motion.div
+          className="w-full md:w-[30%]"
+          whileInView={{ scale: 1, opacity: 1 }}
+          initial={{ scale: 0.8, opacity: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           <Image
             src={"/images/home/follow/image1.png"}
             width={281}
@@ -15,7 +27,8 @@ const Follow: React.FC = () => {
             alt="logo"
             className="h-auto w-full"
           />
-        </div>
+        </motion.div>
+
         <div
           className="flex h-full w-full flex-col items-center justify-center gap-6 pb-8 pt-8 md:w-[40%] md:gap-16 md:pb-32 md:pt-20"
           style={{
@@ -63,7 +76,13 @@ const Follow: React.FC = () => {
             </span>
           </div>
         </div>
-        <div className="w-full md:w-[30%]">
+
+        <motion.div
+          className="w-full md:w-[30%]"
+          whileInView={{ scale: 1, opacity: 1 }}
+          initial={{ scale: 0.8, opacity: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           <Image
             src={"/images/home/follow/image2.png"}
             width={281}
@@ -71,9 +90,9 @@ const Follow: React.FC = () => {
             alt="logo"
             className="h-auto w-full"
           />
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

@@ -30,6 +30,11 @@ export default function MenuMobile() {
   const [orderType, setOrderType] = useState<2 | 3>(3);
   const router = useRouter();
   const isOpen = isRestaurantOpen(restaurant);
+  const [search, setSearch] = useState("");
+
+  const handleClear = () => {
+    setSearch("");
+  };
 
   useEffect(() => {
     const savedOrderType = localStorage.getItem("orderType");
@@ -229,10 +234,7 @@ export default function MenuMobile() {
       <div className="flex w-full flex-col gap-0 md:w-4/6">
         <div className="flex h-fit w-full flex-col gap-2 bg-mobilebg pb-2 pt-5 md:hidden">
           <div className="flex w-full items-center justify-between px-5 py-2">
-            <div
-              onClick={() => router.back()}
-              className="p-0 text-menusecondary"
-            >
+            <div onClick={() => router.back()} className="p-0 text-[#000]">
               <ArrowLeft />
             </div>
             <Image
@@ -244,7 +246,7 @@ export default function MenuMobile() {
             />
             <div
               onClick={() => setShowSearch((prev) => !prev)}
-              className="text-menusecondary"
+              className="text-[#000]"
             >
               <Search />
             </div>
