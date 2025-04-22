@@ -75,7 +75,7 @@ const Contact = ({}) => {
         <div className="flex w-full flex-col lg:flex-row">
           <div className="flex w-full flex-col gap-8 bg-[#F7F4ED] px-6 lg:w-1/2 lg:px-28">
             <div className="flex flex-col gap-8">
-              <h1 className="font-forum text-4xl font-medium uppercase leading-[50px] tracking-[5px] text-[#000] lg:text-5xl">
+              <h1 className="font-playfair text-4xl font-medium uppercase tracking-[5px] text-[#000] md:leading-[50px] lg:text-5xl">
                 Get in
                 <br /> Touch
               </h1>
@@ -265,7 +265,7 @@ const Contact = ({}) => {
       <div className="flex w-full overflow-hidden">
         <Image
           className="h-full w-full object-cover lg:h-[500px]"
-          src="/images/about-us/image5.jpg"
+          src="/images/about-us/5.png"
           alt="bottom"
           width={966}
           height={96}
