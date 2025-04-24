@@ -1,5 +1,3 @@
-
-
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
@@ -94,7 +92,7 @@ const Highlights: React.FC = () => {
         </div>
 
         <div className="flex h-full w-full flex-col gap-8 md:flex-row">
-          {["image1", "image2", "image3", "image5"].map((image, idx) => (
+          {["1", "2", "3", "4"].map((image, idx) => (
             <div
               key={idx}
               className="flex w-full flex-col items-center justify-center gap-6 md:w-[25%]"
@@ -111,7 +109,7 @@ const Highlights: React.FC = () => {
                   width={677}
                   height={503}
                   alt="image"
-                  className="h-auto w-full rounded-t-full object-cover"
+                  className="h-[400px] w-full rounded-full object-cover md:h-[450px]"
                 />
               </motion.div>
 

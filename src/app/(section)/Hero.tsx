@@ -80,7 +80,13 @@ const Hero: React.FC = () => {
 
       <div className="absolute inset-0 bg-black/60" />
 
-      <div className="relative flex flex-col items-center justify-center gap-5 px-4">
+      <motion.div
+        className="relative flex flex-col items-center justify-center gap-5 px-4"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+      >
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -106,7 +112,7 @@ const Hero: React.FC = () => {
             </Button>
           </Link>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
