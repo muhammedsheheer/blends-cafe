@@ -44,19 +44,18 @@ const Navbar = ({
         <div className="flex flex-row items-center justify-between">
           <div></div>
           <div
-            className="flex flex-row items-center justify-center gap-20 px-40 py-8"
-            style={{
-              borderRadius: "999px",
-              background: "rgba(10,10,10,0.03)",
-              backdropFilter: "blur(27.8px)",
-            }}
+            className={`flex flex-row items-center justify-center gap-20 rounded-full px-40 py-8 backdrop-blur-[27.8px] ${
+              pathname === "/" || pathname === "/table-booking"
+                ? "bg-[rgba(10,10,10,0.03)]"
+                : "bg-[#394F3B]"
+            }`}
           >
             <Link
               href="/"
               className={`text-center font-playfair text-sm font-[400] capitalize tracking-[1.106px] ${
                 pathname === "/" || pathname === "/table-booking"
                   ? "text-[#fff]"
-                  : "text-[#000]"
+                  : "text-[#fff]"
               } hover:underline`}
             >
               Home
@@ -67,7 +66,7 @@ const Navbar = ({
               className={`text-center font-playfair text-sm font-[400] capitalize tracking-[1.106px] ${
                 pathname === "/" || pathname === "/table-booking"
                   ? "text-[#fff]"
-                  : "text-[#000]"
+                  : "text-[#fff]"
               } hover:underline`}
             >
               Menu
@@ -78,7 +77,7 @@ const Navbar = ({
               className={`text-center font-playfair text-sm font-[400] capitalize tracking-[1.106px] ${
                 pathname === "/" || pathname === "/table-booking"
                   ? "text-[#fff]"
-                  : "text-[#000]"
+                  : "text-[#fff]"
               } hover:underline`}
             >
               About
@@ -89,7 +88,7 @@ const Navbar = ({
               className={`text-center font-playfair text-sm font-[400] capitalize tracking-[1.106px] ${
                 pathname === "/" || pathname === "/table-booking"
                   ? "text-[#fff]"
-                  : "text-[#000]"
+                  : "text-[#fff]"
               } hover:underline`}
             >
               Contact
@@ -98,23 +97,18 @@ const Navbar = ({
           <div className="">
             <Link href={"/table-booking"}>
               <Button
-                className={`flex flex-row items-center justify-center gap-1 px-7 py-7 font-playfair text-sm font-[600] capitalize tracking-[1.08px] ${
+                className={`flex flex-row items-center justify-center gap-1 rounded-full px-7 py-7 font-playfair text-sm font-[600] capitalize tracking-[1.08px] backdrop-blur-[27.8px] ${
                   pathname === "/" || pathname === "/table-booking"
-                    ? "text-[#F7F4ED] hover:text-[#F7F4ED]"
-                    : "text-[#000] hover:text-[#000]"
+                    ? "bg-[rgba(10,10,10,0.03)] text-[#F7F4ED] hover:text-[#F7F4ED]"
+                    : "bg-[#394F3B] text-[#fff] hover:bg-[#5a785d]"
                 }`}
-                style={{
-                  borderRadius: "999px",
-                  background: "rgba(10,10,10,0.03)",
-                  backdropFilter: "blur(27.7px)",
-                }}
               >
                 book table{" "}
                 <ArrowRight
                   className={`${
                     pathname === "/" || pathname === "/table-booking"
                       ? "w-5 text-[#F7F4ED]"
-                      : "w-5 text-[#000]"
+                      : "w-5 text-[#fff]"
                   }`}
                 />
               </Button>
