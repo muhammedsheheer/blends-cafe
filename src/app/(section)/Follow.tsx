@@ -7,15 +7,20 @@ import { motion } from "framer-motion";
 const Follow: React.FC = () => {
   return (
     <motion.section
-      className="h-full w-full bg-[#394F3B] px-4 pb-4 pt-12 md:px-10 md:pt-16"
+      className="relative h-full w-full bg-[#394F3B] px-4 pb-4 pt-12 md:px-10 md:pt-16"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: false, amount: 0.2 }}
       transition={{ duration: 0.8 }}
     >
+      <div className="lines">
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </div>
       <div className="flex w-full flex-col gap-6 md:flex-row md:items-end">
         <motion.div
-          className="w-full md:w-[30%]"
+          className="z-50 w-full md:w-[30%]"
           whileInView={{ scale: 1, opacity: 1 }}
           initial={{ scale: 0.8, opacity: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -25,12 +30,12 @@ const Follow: React.FC = () => {
             width={281}
             height={74}
             alt="logo"
-            className="h-auto w-full"
+            className="z-50 h-auto w-full"
           />
         </motion.div>
 
         <div
-          className="flex h-full w-full flex-col items-center justify-center gap-6 pb-8 pt-8 md:w-[40%] md:gap-16 md:pb-32 md:pt-20"
+          className="z-50 flex h-full w-full flex-col items-center justify-center gap-6 pb-8 pt-8 md:w-[40%] md:gap-16 md:pb-32 md:pt-20"
           style={{
             borderRadius: "999px 999px 0px 0px",
             background: "rgba(255,255,255,0.86)",
@@ -69,16 +74,19 @@ const Follow: React.FC = () => {
               Opening Hours{" "}
             </span>
             <span className="text-center font-inter text-base font-[400] text-[#394F3B] md:text-lg">
-              Monday-Friday: 09:00 AM - 09:00 PM{" "}
+              Monday-Thursday: 09:00 AM - 08:00 PM{" "}
             </span>
             <span className="text-center font-inter text-base font-[400] text-[#394F3B] md:text-lg">
-              Saturday-Sunday: 10:00 AM - 07:00 PM{" "}
+              Friday-Saturday: 09:00 AM - 09:00 PM{" "}
+            </span>
+            <span className="text-center font-inter text-base font-[400] text-[#394F3B] md:text-lg">
+              Sunday: 10:00 AM - 07:00 PM{" "}
             </span>
           </div>
         </div>
 
         <motion.div
-          className="w-full md:w-[30%]"
+          className="z-50 w-full md:w-[30%]"
           whileInView={{ scale: 1, opacity: 1 }}
           initial={{ scale: 0.8, opacity: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -88,7 +96,7 @@ const Follow: React.FC = () => {
             width={281}
             height={74}
             alt="logo"
-            className="h-auto w-full"
+            className="z-50 h-auto w-full"
           />
         </motion.div>
       </div>

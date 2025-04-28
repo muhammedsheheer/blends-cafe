@@ -308,7 +308,7 @@ export default function Menu() {
                 >
                   <h2
                     className={cn(
-                      "pb-4 text-2xl font-bold text-menuprimary",
+                      "pb-4 text-2xl font-bold text-[#394F3B]",
                       category.items.length === 0 && "hidden pb-0",
                     )}
                   >

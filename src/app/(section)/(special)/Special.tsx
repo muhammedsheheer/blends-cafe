@@ -13,6 +13,11 @@ const Special = ({}) => {
   const { modelData } = useRestaurant();
   return (
     <section className="relative flex h-full w-full justify-center bg-[#394F3B] py-12">
+      <div className="lines">
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </div>
       <div className="pointer-events-none absolute left-0 top-0 h-full w-full overflow-hidden"></div>
       <div className="flex flex-col items-center justify-center gap-2">
         <div className="flex flex-col items-center justify-center gap-8 md:flex-row md:justify-between md:gap-96 2xl:gap-[600px]">

@@ -1,5 +1,3 @@
-
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
@@ -8,10 +6,15 @@ import React from "react";
 import { motion } from "framer-motion";
 const Reserve: React.FC = () => {
   return (
-    <section className="h-full w-full bg-[#394F3B] py-12 pl-4 pr-4 md:py-0 md:pl-0 md:pr-0">
+    <section className="relative h-full w-full bg-[#394F3B] py-12 pl-4 pr-4 md:py-0 md:pl-0 md:pr-0">
+      <div className="lines">
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </div>
       <div className="flex flex-col items-center justify-center gap-6 md:flex-row md:gap-20">
         <motion.div
-          className="w-full md:w-[33%]"
+          className="z-50 w-full md:w-[33%]"
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -50 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
@@ -21,11 +24,11 @@ const Reserve: React.FC = () => {
             width={281}
             height={74}
             alt="logo"
-            className="h-auto w-full"
+            className="z-50 h-auto w-full"
           />
         </motion.div>
 
-        <div className="flex w-full flex-col gap-4 md:ml-16 md:w-[34%]">
+        <div className="z-50 flex w-full flex-col gap-4 md:ml-16 md:w-[34%]">
           <motion.div
             className="flex flex-col gap-2"
             whileInView={{ opacity: 1, y: 0 }}
@@ -71,7 +74,7 @@ const Reserve: React.FC = () => {
         </div>
 
         <motion.div
-          className="w-full md:w-[33%]"
+          className="z-50 w-full md:w-[33%]"
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 50 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
@@ -81,7 +84,7 @@ const Reserve: React.FC = () => {
             width={281}
             height={74}
             alt="logo"
-            className="h-auto w-full"
+            className="z-50 h-auto w-full"
           />
         </motion.div>
       </div>
