@@ -3,6 +3,7 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const containerVariants = {
   hidden: {},
@@ -71,15 +72,18 @@ const Menu: React.FC = () => {
               key={i}
               variants={itemVariants}
               className="flex w-full flex-col items-center justify-center gap-4 md:gap-6"
+              whileHover={{ scale: 1.05 }}
             >
               <div className="h-full w-full rounded-br-full rounded-tl-full">
-                <Image
-                  src={item.image}
-                  width={677}
-                  height={503}
-                  alt={item.name}
-                  className="h-auto w-full rounded-t-full rounded-bl-full object-cover md:h-[300px]"
-                />
+                <Link href={"/menu"}>
+                  <Image
+                    src={item.image}
+                    width={677}
+                    height={503}
+                    alt={item.name}
+                    className="h-auto w-full rounded-t-full rounded-bl-full object-cover md:h-[300px]"
+                  />
+                </Link>
               </div>
               <h6 className="text-center font-italiana text-2xl font-[400] capitalize text-[#000] md:text-3xl md:tracking-[1.8px]">
                 {item.name}
