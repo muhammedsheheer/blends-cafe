@@ -34,11 +34,11 @@ const Menu: React.FC = () => {
       image: "/images/home/menu/2.jpg",
     },
     {
-      name: "Lahmajoun Manouche",
+      name: "zattar veg manouche",
       image: "/images/home/menu/3.jpg",
     },
     {
-      name: "Halloumi Manouche",
+      name: "Puck and Honey Manouche",
       image: "/images/home/menu/4.jpg",
     },
   ];
@@ -85,7 +85,7 @@ const Menu: React.FC = () => {
                   />
                 </Link>
               </div>
-              <h6 className="text-center font-italiana text-2xl font-[400] capitalize text-[#000] md:text-3xl md:tracking-[1.8px]">
+              <h6 className="text-center font-italiana text-2xl font-[400] capitalize text-[#000] md:tracking-[1.8px]">
                 {item.name}
               </h6>
             </motion.div>

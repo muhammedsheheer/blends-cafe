@@ -7,22 +7,22 @@ const menuItems = [
   {
     name: "Zattar Manouche ",
     image: "/images/home/menu/5.jpg",
-    price: "€ 4.50",
+    price: "£ 4.50",
   },
   {
     name: "Labneh Manouche",
     image: "/images/home/menu/6.jpg",
-    price: "€ 5.50",
+    price: "£ 5.50",
   },
   {
     name: "Spinch Manouche",
-    image: "/images/home/menu/7.jpg",
-    price: "€ 7.00",
+    image: "/images/home/menu/8.jpg",
+    price: "£ 6.50",
   },
   {
     name: "Cheese & Eggs Manouche",
-    image: "/images/home/menu/8.jpg",
-    price: "€ 6.50",
+    image: "/images/home/menu/7.jpg",
+    price: "£ 7.00",
   },
 ];
 
