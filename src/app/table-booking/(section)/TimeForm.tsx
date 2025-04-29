@@ -177,7 +177,7 @@ const TimeForm: FC<TimeFormProps> = ({ mainform, setpage }) => {
                         <SelectItem
                           key={num}
                           value={num.toString()}
-                          className="text-[#000]"
+                          className="text-[#fff]"
                         >
                           {num} {num === 1 ? "Guest" : "Guests"}
                         </SelectItem>
@@ -256,7 +256,7 @@ const TimeForm: FC<TimeFormProps> = ({ mainform, setpage }) => {
                       <SelectContent className="max-h-[300px]">
                         {generateTimeSlots().map((time) => (
                           <SelectItem
-                            className="text-[#000]"
+                            className="text-[#fff]"
                             key={time}
                             value={time}
                           >

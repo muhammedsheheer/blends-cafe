@@ -138,7 +138,7 @@ const CustomerDetails: FC<CustomerDetailsProps> = ({
                     <SelectValue placeholder="Select Booking Place" />
                   </SelectTrigger>
                 </FormControl>
-                <SelectContent className="max-h-[300px] text-[#000]">
+                <SelectContent className="max-h-[300px] text-[#fff]">
                   <SelectItem value="Terrace">Terrace</SelectItem>
                   <SelectItem value="Restaurent">Restaurent</SelectItem>
                 </SelectContent>
