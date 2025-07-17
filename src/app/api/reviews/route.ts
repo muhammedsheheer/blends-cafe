@@ -2,16 +2,19 @@ import type { Review } from "@/types/review.type";
 import axios, { type AxiosResponse } from "axios";
 import { NextResponse } from "next/server";
 
-export const dynamic = "force-dynamic"; // defaults to auto
+export const dynamic = "force-dynamic";
 
 interface PlaceDetailsResponse {
-  reviews: Review[];
+  data: {
+    reviews: Review[];
+  };
+  // result: {
+  // };
   status: string;
 }
 
 export async function GET() {
   const placeId = process.env.GOOGLE_RESTAURANT_PLACE_ID;
-
   if (!placeId) {
     return NextResponse.json(
       { error: "Place ID is required" },
@@ -20,8 +23,7 @@ export async function GET() {
   }
 
   try {
-    const apiKey = process.env.GOOGLE_PLACES_API_KEY;
-    const url = `https://places.googleapis.com/v1/places/${placeId}?fields=reviews&key=${apiKey}`;
+    const url = `https://api.staging.app.thefoodo.com/restaurant-reviews/${placeId}`;
     const response: AxiosResponse<PlaceDetailsResponse> = await axios.get(url);
 
     // if (response.data.status !== "OK") {
@@ -31,7 +33,7 @@ export async function GET() {
     //   );
     // }
 
-    const reviews = response.data.reviews || [];
+    const reviews = response.data.data.reviews || [];
     return NextResponse.json(reviews, { status: 200 });
   } catch (error) {
     return NextResponse.json(
